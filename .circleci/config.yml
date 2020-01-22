@@ -13,7 +13,7 @@ jobs:
       #     Uncomment the following run block, if permissions for gradlew fail on CircleCI:
       - run:
          name: Chmod permissions
-         command: chmod +x ./gradlew
+         command: sudo chmod +x ./gradlew
       - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
